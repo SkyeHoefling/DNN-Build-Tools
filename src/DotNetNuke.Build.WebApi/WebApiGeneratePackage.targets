@@ -1,6 +1,6 @@
 ﻿<Project>
 
-  <Target Name="GeneratePackage" AfterTargets="CoreCompile">
+  <Target Name="WebApiGeneratePackage" AfterTargets="CoreCompile">
     <Message Importance="high" Text="Hello world from generate package!" />
     <Message Importance="high" Text="Project build dir: $(MSBuildProjectDirectory)" />
   </Target>

@@ -1,5 +1,5 @@
 ﻿<Project>
 
-  <Import Project="$(MSBuildThisFileDirectory)/../../tools/GeneratePackage.targets" />
+  <Import Project="$(MSBuildThisFileDirectory)/../../tools/HtmlGeneratePackage.targets" />
 
 </Project>

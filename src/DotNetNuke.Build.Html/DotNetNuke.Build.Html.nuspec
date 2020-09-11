@@ -11,6 +11,6 @@
     <file src="DotNetNuke.Build.Html.targets" target="build/netstandard2.0/DotNetNuke.Build.Html.targets" />
     <file src="DotNetNuke.Build.Html.targets" target="build/net45/DotNetNuke.Build.Html.targets" />
 
-    <file src="GeneratePackage.targets" target="tools/" />
+    <file src="HtmlGeneratePackage.targets" target="tools/" />
   </files>
 </package>
