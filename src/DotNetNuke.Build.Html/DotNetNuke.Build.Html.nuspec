@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>DotNetNuke.Build.Html</id>
-    <version>1.0.0</version>
+    <version>1.0.3</version>
     <authors>Andrew Hoefling</authors>
     <description>DNN Build Scripts for packing HTML Modules</description>
   </metadata>
