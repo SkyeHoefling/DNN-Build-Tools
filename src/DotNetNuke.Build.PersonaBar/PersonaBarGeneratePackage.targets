@@ -1,7 +1,7 @@
 ﻿<Project>
 
   <Target Name="PersonaBarGeneratePackage" AfterTargets="CoreCompile">
-    <Message Importance="high" Text="Hello world from generate package!" />
+    <Message Importance="high" Text="Hello world from PErsona Bar generate package!" />
     <Message Importance="high" Text="Project build dir: $(MSBuildProjectDirectory)" />
   </Target>
 
