@@ -16,13 +16,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{19EF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNuke.Modules.Samples.Html", "samples\DotNetNuke.Modules.Samples.Html\DotNetNuke.Modules.Samples.Html.csproj", "{639E9D7E-4776-4D32-94EE-545A0C17E5F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNuke.Build.Mvc", "src\DotNetNuke.Build.Mvc\DotNetNuke.Build.Mvc.csproj", "{58BB6B17-5243-4468-9319-1106E3FB824E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNuke.Build.Mvc", "src\DotNetNuke.Build.Mvc\DotNetNuke.Build.Mvc.csproj", "{58BB6B17-5243-4468-9319-1106E3FB824E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNuke.Build.WebApi", "src\DotNetNuke.Build.WebApi\DotNetNuke.Build.WebApi.csproj", "{AABB007D-A744-4149-9B50-DED5F3D8C412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNuke.Build.WebApi", "src\DotNetNuke.Build.WebApi\DotNetNuke.Build.WebApi.csproj", "{AABB007D-A744-4149-9B50-DED5F3D8C412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNuke.Build.WebForms", "src\DotNetNuke.Build.WebForms\DotNetNuke.Build.WebForms.csproj", "{B5C10ADB-4837-4A93-AA54-AC2008430102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNuke.Build.WebForms", "src\DotNetNuke.Build.WebForms\DotNetNuke.Build.WebForms.csproj", "{B5C10ADB-4837-4A93-AA54-AC2008430102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNuke.Build.PersonaBar", "src\DotNetNuke.Build.PersonaBar\DotNetNuke.Build.PersonaBar.csproj", "{4923E809-D66E-4B09-A639-CBA4728D7A5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetNuke.Build.PersonaBar", "src\DotNetNuke.Build.PersonaBar\DotNetNuke.Build.PersonaBar.csproj", "{4923E809-D66E-4B09-A639-CBA4728D7A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNuke.Modules.Samples.Mvc", "samples\DotNetNuke.Modules.Samples.Mvc\DotNetNuke.Modules.Samples.Mvc.csproj", "{0464C90F-9FED-433E-9632-7D5E4C2A4D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNuke.Modules.Samples.WebApi", "samples\DotNetNuke.Modules.Samples.WebApi\DotNetNuke.Modules.Samples.WebApi.csproj", "{D72B3033-650C-47D0-9E96-CA85D5203FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetNuke.Modules.Samples.PersonaBar", "samples\DotNetNuke.Modules.Samples.PersonaBar\DotNetNuke.Modules.Samples.PersonaBar.csproj", "{9F372916-06D5-48F9-B8AB-C6AEC7CF4F99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,12 +60,27 @@ Global
 		{4923E809-D66E-4B09-A639-CBA4728D7A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4923E809-D66E-4B09-A639-CBA4728D7A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4923E809-D66E-4B09-A639-CBA4728D7A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0464C90F-9FED-433E-9632-7D5E4C2A4D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0464C90F-9FED-433E-9632-7D5E4C2A4D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0464C90F-9FED-433E-9632-7D5E4C2A4D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0464C90F-9FED-433E-9632-7D5E4C2A4D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72B3033-650C-47D0-9E96-CA85D5203FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72B3033-650C-47D0-9E96-CA85D5203FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72B3033-650C-47D0-9E96-CA85D5203FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72B3033-650C-47D0-9E96-CA85D5203FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F372916-06D5-48F9-B8AB-C6AEC7CF4F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F372916-06D5-48F9-B8AB-C6AEC7CF4F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F372916-06D5-48F9-B8AB-C6AEC7CF4F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F372916-06D5-48F9-B8AB-C6AEC7CF4F99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{639E9D7E-4776-4D32-94EE-545A0C17E5F2} = {19EF78B2-747F-4646-93CC-FB30679EBD8A}
+		{0464C90F-9FED-433E-9632-7D5E4C2A4D53} = {19EF78B2-747F-4646-93CC-FB30679EBD8A}
+		{D72B3033-650C-47D0-9E96-CA85D5203FE2} = {19EF78B2-747F-4646-93CC-FB30679EBD8A}
+		{9F372916-06D5-48F9-B8AB-C6AEC7CF4F99} = {19EF78B2-747F-4646-93CC-FB30679EBD8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {54BA8224-6D71-439C-B250-3052CCBCE8DE}
