@@ -1,8 +1,69 @@
 ﻿<Project>
 
-  <Target Name="GeneratePackage" AfterTargets="CoreCompile">
+  <Target Name="GeneratePackage" AfterTargets="CoreCompile" DependsOnTargets="ValidateDnnManifest">
     <Message Importance="high" Text="Hello world from HTML generate package!" />
     <Message Importance="high" Text="Project build dir: $(MSBuildProjectDirectory)" />
+  </Target>
+
+  <Target Name="ValidateDnnManifest" >
+    <Message Importance="high" Text="Reading DNN manifest file" />
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="dotnetnuke/packages/package/@name">
+      <Output TaskParameter="Result" ItemName="ModuleName" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="dotnetnuke/packages/package/@version">
+      <Output TaskParameter="Result" ItemName="ModuleVersion" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="(dotnetnuke/packages/package/friendlyName//.)[2]">
+      <Output TaskParameter="Result" ItemName="ModuleFriendlyName" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="(dotnetnuke/packages/package/description//.)[2]">
+      <Output TaskParameter="Result" ItemName="ModuleDescription" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="(dotnetnuke/packages/package/iconFile//.)[2]">
+      <Output TaskParameter="Result" ItemName="ModuleIconFile" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="(dotnetnuke/packages/package/owner/name//.)[2]">
+      <Output TaskParameter="Result" ItemName="OwnerName" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="(dotnetnuke/packages/package/owner/organization//.)[2]">
+      <Output TaskParameter="Result" ItemName="OwnerOrganization" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="(dotnetnuke/packages/package/owner/url//.)[2]">
+      <Output TaskParameter="Result" ItemName="OwnerUrl" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="(dotnetnuke/packages/package/owner/email//.)[2]">
+      <Output TaskParameter="Result" ItemName="OwnerEmail" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="dotnetnuke/packages/package/license/@src">
+      <Output TaskParameter="Result" ItemName="License" />
+    </XmlPeek>
+
+    <XmlPeek XmlInputPath="manifest.dnn" Query="dotnetnuke/packages/package/releaseNotes/@src">
+      <Output TaskParameter="Result" ItemName="ReleaseNotes" />
+    </XmlPeek>
+
+    <Message Importance="high" Text="DNN Module Name                :   @(ModuleName)" />
+    <Message Importance="high" Text="DNN Module Version             :   @(ModuleVersion)" />
+    <Message Importance="high" Text="DNN Module Friendly Name       :   @(ModuleFriendlyName)" />
+    <Message Importance="high" Text="DNN Module Description         :   @(ModuleDescription)" />
+    <Message Importance="high" Text="DNN Module Icon File           :   @(ModuleIconFile)" />
+    <Message Importance="high" Text="DNN Module Owner Name          :   @(OwnerName)" />
+    <Message Importance="high" Text="DNN Module Owner Organization  :   @(OwnerOrganization)" />
+    <Message Importance="high" Text="DNN Module Owner Url           :   @(OwnerUrl)" />
+    <Message Importance="high" Text="DNN Module Owner Email         :   @(OwnerEmail)" />
+    <Message Importance="high" Text="DNN Module License             :   @(License)" />
+    <Message Importance="high" Text="DNN Module Release Notes       :   @(ReleaseNotes)" />
+
   </Target>
 
 </Project>
