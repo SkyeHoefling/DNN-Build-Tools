@@ -5,7 +5,7 @@
     <Message Importance="high" Text="Project build dir: $(MSBuildProjectDirectory)" />
   </Target>
 
-  <Target Name="ValidateDnnManifest" >
+  <Target Name="ValidateDnnManifest">
     <Message Importance="high" Text="Reading DNN manifest file" />
 
     <XmlPeek XmlInputPath="manifest.dnn" Query="dotnetnuke/packages/package/@name">
