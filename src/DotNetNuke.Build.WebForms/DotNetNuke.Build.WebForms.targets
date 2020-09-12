@@ -1,5 +1,0 @@
-﻿<Project>
-
-  <Import Project="$(MSBuildThisFileDirectory)/../../tools/WebFormsGeneratePackage.targets" />
-
-</Project>

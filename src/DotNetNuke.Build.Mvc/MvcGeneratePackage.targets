@@ -1,8 +1,0 @@
-﻿<Project>
-
-  <Target Name="MvcGeneratePackage" AfterTargets="CoreCompile">
-    <Message Importance="high" Text="Hello world from MVC generate package!" />
-    <Message Importance="high" Text="Project build dir: $(MSBuildProjectDirectory)" />
-  </Target>
-
-</Project>

@@ -1,6 +1,6 @@
 ﻿<Project>
 
-  <Target Name="HtmlGeneratePackage" AfterTargets="CoreCompile">
+  <Target Name="GeneratePackage" AfterTargets="CoreCompile">
     <Message Importance="high" Text="Hello world from HTML generate package!" />
     <Message Importance="high" Text="Project build dir: $(MSBuildProjectDirectory)" />
   </Target>
